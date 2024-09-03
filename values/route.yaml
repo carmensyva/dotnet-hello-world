@@ -1,0 +1,14 @@
+kind: Route
+apiVersion: route.openshift.io/v1
+metadata:
+  name: hello-world
+  namespace: dotnet
+  labels:
+    app.kubernetes.io/instance: hello-world
+spec:
+  to:
+    kind: Service
+    name: hello-world
+  tls: null
+  port:
+    targetPort: 5000
