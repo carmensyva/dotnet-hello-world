@@ -1,6 +1,6 @@
 pipeline {
     agent {
-        label 'skopeo'
+        label 'dotnet-skopeo'
     }
 
     environment {
